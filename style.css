@@ -325,6 +325,16 @@ nav .nav-inner {
   color: rgba(243,240,239,0.4);
 }
 
+/* ─── Legal Warning ────────────────────────────── */
+.legal-warning {
+  background: var(--surface);
+  border-top: 3px solid var(--primary-mid);
+  padding: var(--section-pad-d) 0;
+}
+
+.legal-warning h2 { margin-bottom: 24px; }
+.legal-warning p { color: var(--on-surface-var); font-size: 1.1rem; max-width: 720px; }
+
 /* ─── How It Works ──────────────────────────────── */
 .how-it-works { background: var(--surface-low); }
 .how-it-works h2 { margin-bottom: 16px; }
