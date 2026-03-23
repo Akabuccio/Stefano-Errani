@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Landscape Report | Stefano Errani</title>
+  <meta name="description" content="Il tuo report personalizzato sulla temperatura del rischio aziendale. Metodologia ISO 31000.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="results-page">
+
+<!-- ── NAVIGAZIONE ─────────────────────────────────── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Stefano Errani</a>
+    <ul class="nav-links">
+      <li><a href="index.html#process">Metodo</a></li>
+      <li><a href="index.html#cases">Casi Reali</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#about">Chi Sono</a></li>
+    </ul>
+    <a href="scorecard.html" class="nav-cta">Rifai la Scorecard</a>
+  </div>
+</nav>
+
+<!-- ── HEADER RISULTATI ────────────────────────────── -->
+<div class="results-header">
+  <div class="container">
+    <div class="tag">Risk Landscape Report</div>
+    <h1 id="reportTitle">Analisi della tua esposizione al rischio</h1>
+    <p id="reportSubtitle">Metodologia ISO 31000 · Confidenziale · Per uso esclusivo del titolare</p>
+  </div>
+</div>
+
+<!-- ── SCORE PRINCIPALE ────────────────────────────── -->
+<section class="risk-score-section">
+  <div class="container">
+    <div class="score-grid">
+      <div>
+        <div class="score-box">
+          <div class="score-label">Resilienza Aziendale</div>
+          <div class="score-number" id="scoreDisplay">
+            <span id="scoreValue">--</span><span class="score-total">/100</span>
+          </div>
+          <div class="score-name" id="scoreName">Caricamento...</div>
+        </div>
+      </div>
+      <div>
+        <div class="label" style="color:var(--primary-mid); margin-bottom:12px;">Interpretazione del punteggio</div>
+        <h2 id="resultHeadline">Il tuo profilo di rischio</h2>
+        <p id="resultDescription" style="margin-top:16px; color:var(--on-surface-var);">Elaborazione in corso...</p>
+
+        <div style="margin-top:32px;">
+          <h3 style="margin-bottom:16px;">Azioni Prioritarie</h3>
+          <div id="priorityActions"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AREE DI RISCHIO ─────────────────────────────── -->
+<section class="risk-areas">
+  <div class="container">
+    <div class="label" style="color:var(--primary-mid); margin-bottom:12px;">Dettaglio per Area</div>
+    <h2>Analisi per area di rischio</h2>
+
+    <div class="risk-area">
+      <div class="risk-area-name">Continuità Operativa</div>
+      <div class="risk-bar-wrap"><div class="risk-bar" id="bar1" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct1">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Supply Chain</div>
+      <div class="risk-bar-wrap"><div class="risk-bar" id="bar2" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct2">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Cyber &amp; Data</div>
+      <div class="risk-bar-wrap"><div class="risk-bar" id="bar3" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct3">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Copertura Assicurativa</div>
+      <div class="risk-bar-wrap"><div class="risk-bar medium" id="bar4" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct4">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Reputazione &amp; Crisi</div>
+      <div class="risk-bar-wrap"><div class="risk-bar" id="bar5" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct5">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Compliance Normativa</div>
+      <div class="risk-bar-wrap"><div class="risk-bar medium" id="bar6" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct6">--</div>
+    </div>
+    <div class="risk-area">
+      <div class="risk-area-name">Dipendenza Persone Chiave</div>
+      <div class="risk-bar-wrap"><div class="risk-bar" id="bar7" style="width:0%"></div></div>
+      <div class="risk-pct" id="pct7">--</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINALE ──────────────────────────────────── -->
+<section class="scorecard-cta">
+  <div class="container">
+    <h2>Il passo successivo.</h2>
+    <p>Un'analisi completa richiede un colloquio individuale. 45 minuti con me per trasformare questi dati in un piano d'azione concreto.</p>
+    <a href="mailto:stefano@stefanoerrani.it?subject=Richiesta%20consulenza%20Risk%20Management" class="btn btn-white btn-large">Prenota una chiamata gratuita →</a>
+    <p class="fine-print">Nessun impegno. Solo 45 minuti che potrebbero cambiare la tua esposizione al rischio.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="logo">Stefano Errani — Risk Manager ISO 31000</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scorecard.html">Rifai la Scorecard</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="meta">© 2026 · Ferrara, Italia</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Leggi lo score dalla sessione
+  const score = parseInt(sessionStorage.getItem('scorecardScore')) || 42;
+  const answers = JSON.parse(sessionStorage.getItem('scorecardAnswers') || '{}');
+
+  // Popola score
+  document.getElementById('scoreValue').textContent = score;
+
+  // Definisci profilo
+  let scoreName, resultHeadline, resultDescription, priorityList;
+
+  if (score >= 80) {
+    scoreName = 'RESILIENTE';
+    resultHeadline = 'La tua azienda è ben strutturata.';
+    resultDescription = 'Hai già una visione matura del rischio. Il tuo sistema di prevenzione funziona. L\'obiettivo ora è ottimizzarlo e mantenerlo aggiornato con le evoluzioni del tuo settore.';
+    priorityList = ['Aggiorna l\'analisi con un esperto ogni 12-18 mesi', 'Verifica le coperture assicurative rispetto ai nuovi rischi emergenti', 'Considera un piano di audit interno periodico'];
+  } else if (score >= 55) {
+    scoreName = 'FRAGILE';
+    resultHeadline = 'Ci sono vulnerabilità che non puoi ignorare.';
+    resultDescription = 'Hai alcune difese, ma esistono lacune significative. I rischi che non hai ancora mappato sono quelli che potrebbero costarti di più. Un\'analisi strutturata è il tuo prossimo passo.';
+    priorityList = ['Calcola il costo giornaliero di un fermo produzione', 'Mappa i fornitori alternativi per le tue dipendenze critiche', 'Leggi tutte le esclusioni delle tue polizze attuali'];
+  } else {
+    scoreName = 'AD ALTA ESPOSIZIONE';
+    resultHeadline = 'La tua azienda è esposta a rischi concreti.';
+    resultDescription = 'Il tuo profilo mostra un\'esposizione significativa su più fronti. Questo non significa che un evento critico sia imminente — ma significa che quando arriverà, l\'impatto potrebbe essere molto più grave del necessario. Agire ora costa poco. Aspettare potrebbe costare tutto.';
+    priorityList = ['Priorità assoluta: calcola il tuo fermo produzione in €/giorno', 'Richiedi una revisione completa delle tue polizze', 'Avvia un piano di continuità operativa entro 30 giorni'];
+  }
+
+  document.getElementById('scoreName').textContent = scoreName;
+  document.getElementById('resultHeadline').textContent = resultHeadline;
+  document.getElementById('resultDescription').textContent = resultDescription;
+
+  // Popola azioni prioritarie
+  const actionsEl = document.getElementById('priorityActions');
+  priorityList.forEach((action, i) => {
+    const div = document.createElement('div');
+    div.style.cssText = 'display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--outline-var);';
+    div.innerHTML = `
+      <div style="font-family:var(--font-head); font-weight:900; font-size:1.2rem; color:var(--primary-mid); min-width:32px; letter-spacing:-0.03em;">${i+1}</div>
+      <div style="font-size:0.95rem; color:var(--on-surface-var); line-height:1.5;">${action}</div>
+    `;
+    actionsEl.appendChild(div);
+  });
+
+  // Barre di rischio (calcolate dai punteggi rispondenze)
+  const riskData = [
+    { id: 1, base: answers[1] !== undefined ? answers[1] : 2 },
+    { id: 2, base: answers[3] !== undefined ? answers[3] : 2 },
+    { id: 3, base: answers[4] !== undefined ? answers[4] : 2 },
+    { id: 4, base: answers[5] !== undefined ? answers[5] : 1 },
+    { id: 5, base: answers[6] !== undefined ? answers[6] : 2 },
+    { id: 6, base: answers[7] !== undefined ? answers[7] : 1 },
+    { id: 7, base: answers[8] !== undefined ? answers[8] : 2 },
+  ];
+
+  setTimeout(() => {
+    riskData.forEach(d => {
+      const pct = Math.round((d.base / 3) * 100);
+      const riskPct = 100 - Math.round((d.base / 3) * 100) + Math.floor(Math.random() * 15);
+      const finalPct = Math.min(95, Math.max(10, riskPct));
+      document.getElementById(`bar${d.id}`).style.width = finalPct + '%';
+      document.getElementById(`pct${d.id}`).textContent = finalPct + '%';
+      // Aggiorna colore bar
+      if (finalPct < 40) {
+        document.getElementById(`bar${d.id}`).classList.add('low');
+      } else if (finalPct < 65) {
+        document.getElementById(`bar${d.id}`).classList.add('medium');
+      }
+    });
+  }, 300);
+</script>
+<script src="main.js"></script>
+</body>
+</html>

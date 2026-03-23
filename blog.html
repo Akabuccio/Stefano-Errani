@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Riflessioni sul Rischio | Stefano Errani</title>
+  <meta name="description" content="Analisi, casi reali e riflessioni sul Risk Management per imprenditori. Blog di Stefano Errani, Risk Manager ISO 31000.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Stefano Errani</a>
+    <ul class="nav-links">
+      <li><a href="index.html#process">Metodo</a></li>
+      <li><a href="index.html#cases">Casi Reali</a></li>
+      <li><a href="blog.html" style="color:var(--primary-mid)">Blog</a></li>
+      <li><a href="index.html#about">Chi Sono</a></li>
+    </ul>
+    <a href="scorecard.html" class="nav-cta">Fai la Scorecard</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose">✕</button>
+  <a href="index.html#process" onclick="closeMobileNav()">Metodo</a>
+  <a href="index.html#cases" onclick="closeMobileNav()">Casi Reali</a>
+  <a href="blog.html">Blog</a>
+  <a href="index.html#about" onclick="closeMobileNav()">Chi Sono</a>
+  <a href="scorecard.html" style="color:var(--primary-mid)">Fai la Scorecard →</a>
+</div>
+
+<!-- ── HEADER BLOG ─────────────────────────────────── -->
+<div class="blog-hero">
+  <div class="container">
+    <div class="label" style="color:rgba(243,240,239,0.4); margin-bottom:12px;">Riflessioni sul Rischio</div>
+    <h1>Blog</h1>
+    <p>Analisi, numeri veri e storie che nessuno ti racconta</p>
+  </div>
+</div>
+
+<!-- ── ARTICOLI ────────────────────────────────────── -->
+<section style="background:var(--surface-low); padding: var(--section-pad-d) 0;">
+  <div class="container">
+
+    <!-- Nuovi articoli da Brainstorming -->
+    <div class="label" style="color:var(--primary-mid); margin-bottom:20px; letter-spacing:0.1em;">Nuovi — Marzo 2026</div>
+    <div class="blog-grid">
+
+      <!-- Featured: articolo 200€ -->
+      <a href="articolo.html" class="blog-card blog-card-featured">
+        <div class="blog-card-tag">Caso Reale · Lettura: 6 min</div>
+        <h2>Perché il risparmio di 200€ può distruggere la tua azienda</h2>
+        <p>La storia della palestra che ha scelto di non aumentare il massimale RC di 200€ all'anno. 800.000 euro di conseguenze.</p>
+        <div class="blog-card-meta">Stefano Errani · Marzo 2026</div>
+      </a>
+
+      <!-- Post 1: Castori -->
+      <a href="post-castori.html" class="blog-card">
+        <div class="blog-card-tag">Posizionamento · Lettura: 5 min</div>
+        <h2>I Castori: i broker che ti fanno risparmiare oggi e chiudere domani</h2>
+        <p>C'è una categoria di intermediari assicurativi che abbassa il tuo premio e ti lascia scoperto sui rischi veri. Come riconoscerli prima che sia troppo tardi.</p>
+        <div class="blog-card-meta">Stefano Errani · Marzo 2026</div>
+      </a>
+
+      <!-- Post 2: Codice Crisi -->
+      <a href="post-codice-crisi.html" class="blog-card">
+        <div class="blog-card-tag">Legale · Lettura: 6 min</div>
+        <h2>Il Codice della Crisi d'Impresa ti riguarda. Anche se non lo sai.</h2>
+        <p>Dal 2022, se la tua azienda fallisce e non avevi sistemi di prevenzione del rischio, rischi di rispondere dei debiti con i tuoi beni personali. La legge è già vigente.</p>
+        <div class="blog-card-meta">Stefano Errani · Marzo 2026</div>
+      </a>
+
+      <!-- Post 3: Cuscinetti 80k -->
+      <a href="post-cuscinetti.html" class="blog-card">
+        <div class="blog-card-tag">ROI · Lettura: 5 min</div>
+        <h2>La macchina che guadagnava 80.000€ di sabato</h2>
+        <p>Una macchina da stampaggio, dei cuscinetti rotti ogni 3 mesi, e un calendario di manutenzione spostato di 30 giorni. Il risultato: 80.000 euro in più all'anno.</p>
+        <div class="blog-card-meta">Stefano Errani · Marzo 2026</div>
+      </a>
+
+      <!-- Post 4: Cigno Nero -->
+      <a href="post-cigno-nero.html" class="blog-card">
+        <div class="blog-card-tag">Mercati · Lettura: 7 min</div>
+        <h2>Il Cigno Nero alle tre del mattino: come si sopravvive a una volatilità estrema</h2>
+        <p>Quello che ho imparato perdendo metà del conto mentre scendevo da un viadotto a Madonna di Campiglio. Il risk management applicato ai mercati finanziari.</p>
+        <div class="blog-card-meta">Stefano Errani · Marzo 2026</div>
+      </a>
+
+    </div>
+
+    <!-- Divider archivio -->
+    <div style="margin:64px 0 32px; border-top:1px solid var(--outline-var); padding-top:48px;">
+      <div class="label" style="color:var(--on-surface-var); margin-bottom:20px; letter-spacing:0.1em;">Archivio</div>
+    </div>
+    <div class="blog-grid">
+
+      <!-- Articolo archivio 1 -->
+      <div class="blog-card">
+        <div class="blog-card-tag">Analisi · Lettura: 5 min</div>
+        <h2>L'illusione del Controllo nei Mercati Volatili</h2>
+        <p>Gli imprenditori italiani tendono a confondere la familiarità con la sicurezza. Ecco perché il mercato che conosci da trent'anni è ancora capace di sorprenderti.</p>
+        <div class="blog-card-meta">Stefano Errani · Febbraio 2026</div>
+      </div>
+
+      <!-- Articolo archivio 2 -->
+      <div class="blog-card">
+        <div class="blog-card-tag">Strategia · Lettura: 4 min</div>
+        <h2>Il costo del silenzio: Anatomia di un crollo reputazionale</h2>
+        <p>Un'azienda che non comunica durante una crisi non sta salvaguardando la propria immagine: sta amplificando il danno. I dati lo confermano.</p>
+        <div class="blog-card-meta">Stefano Errani · Gennaio 2026</div>
+      </div>
+
+      <!-- Articolo archivio 3 -->
+      <div class="blog-card">
+        <div class="blog-card-tag">Tecnologia · Lettura: 7 min</div>
+        <h2>Algoritmi vs Intuito: Chi vince nella gestione della crisi?</h2>
+        <p>L'intelligenza artificiale può prevedere i rischi meglio di un esperto umano? La risposta non è quella che ti aspetti. E le implicazioni per le PMI italiane sono concrete.</p>
+        <div class="blog-card-meta">Stefano Errani · Dicembre 2025</div>
+      </div>
+
+      <!-- Articolo archivio 4 -->
+      <div class="blog-card">
+        <div class="blog-card-tag">Supply Chain · Lettura: 5 min</div>
+        <h2>La vulnerabilità delle supply chain post-globalizzazione</h2>
+        <p>Dopo il COVID, molte aziende hanno detto "non succederà mai più". Tre anni dopo, le supply chain italiane hanno esattamente le stesse vulnerabilità. Ecco perché.</p>
+        <div class="blog-card-meta">Stefano Errani · Novembre 2025</div>
+      </div>
+
+      <!-- Articolo archivio 5 -->
+      <div class="blog-card">
+        <div class="blog-card-tag">ISO 31000 · Lettura: 8 min</div>
+        <h2>ISO 31000: Lo standard che le grandi aziende usano e le PMI ignorano</h2>
+        <p>Non è uno standard solo per le multinazionali. L'ISO 31000 è uno dei framework più pragmatici ed efficaci per qualsiasi dimensione aziendale. Ecco come si applica nella pratica.</p>
+        <div class="blog-card-meta">Stefano Errani · Ottobre 2025</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ──────────────────────────────────── -->
+<section class="newsletter">
+  <div class="container">
+    <div class="label" style="color:var(--primary-mid); margin-bottom:12px;">Newsletter</div>
+    <h2>Ricevi solo dati, mai fumo.</h2>
+    <p>Una volta al mese: un'analisi, un caso reale, un numero che vale la pena conoscere. Nessuna promozione, nessuna vendita.</p>
+    <div class="newsletter-form">
+      <input type="email" id="newsletterEmail" placeholder="tuaemail@azienda.it">
+      <button class="btn btn-primary" onclick="subscribeNewsletter()">Iscriviti →</button>
+    </div>
+    <p style="margin-top:16px; font-family:var(--font-label); font-size:0.7rem; color:var(--on-surface-var); letter-spacing:0.08em;">Zero spam. Cancellati quando vuoi.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="logo">Stefano Errani — Risk Manager ISO 31000</div>
+        <div class="meta" style="margin-top:6px;">Ferrara, Italia · P.IVA 0123456789</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scorecard.html">Scorecard</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="https://linkedin.com/in/stefanoerrani" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      </ul>
+      <div class="meta">© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function subscribeNewsletter() {
+    const email = document.getElementById('newsletterEmail').value;
+    if (!email || !email.includes('@')) {
+      alert('Inserisci un indirizzo email valido.');
+      return;
+    }
+    alert('Grazie! Ti aggiungo alla lista. Riceverai la prossima newsletter appena è pronta.');
+    document.getElementById('newsletterEmail').value = '';
+  }
+</script>
+<script src="main.js"></script>
+</body>
+</html>
